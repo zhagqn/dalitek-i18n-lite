@@ -1,6 +1,6 @@
 {
   "name": "@dalitek/i18n-lite",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -12,14 +12,14 @@
     "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
     "start": "vue-cli-service serve"
   },
-  "main": "dist/dalitek-i18n-lite.common.js",
-  "module": "dist/dalitek-i18n-lite.esm.js",
-  "unpkg": "dist/dalitek-i18n-lite.umd.min.js",
+  "main": "dist/i18n-lite.common.js",
+  "module": "dist/i18n-lite.esm.js",
+  "unpkg": "dist/i18n-lite.umd.min.js",
   "files": [
-    "dist/dalitek-i18n-lite.common.js",
-    "dist/dalitek-i18n-lite.umd.min.js",
-    "dist/dalitek-i18n-lite.umd.js",
-    "dist/dalitek-i18n-lite.esm.js",
+    "dist/i18n-lite.common.js",
+    "dist/i18n-lite.umd.min.js",
+    "dist/i18n-lite.umd.js",
+    "dist/i18n-lite.esm.js",
     "src"
   ],
   "dependencies": {
