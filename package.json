@@ -1,15 +1,29 @@
 {
-  "name": "dalitek-i18n-lite",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@dalitek/i18n-lite",
+  "version": "0.2.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "demo": "vue-cli-service demo",
+    "docs": "npm run docs:serve",
+    "docs:build": "vue-cli-service docs --mode build",
+    "docs:serve": "vue-cli-service docs --mode serve",
+    "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
+    "start": "vue-cli-service serve"
   },
+  "main": "dist/dalitek-i18n-lite.common.js",
+  "module": "dist/dalitek-i18n-lite.esm.js",
+  "unpkg": "dist/dalitek-i18n-lite.umd.min.js",
+  "files": [
+    "dist/dalitek-i18n-lite.common.js",
+    "dist/dalitek-i18n-lite.umd.min.js",
+    "dist/dalitek-i18n-lite.umd.js",
+    "dist/dalitek-i18n-lite.esm.js",
+    "src"
+  ],
   "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "core-js": "^2.6.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
@@ -18,6 +32,27 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
-  }
+    "vue-cli-plugin-p11n": "^0.3.0",
+    "vue-template-compiler": "^2.6.10",
+    "vue": "^2.6.10"
+  },
+  "jsdelivr": "dist/dalitek-i18n-lite.umd.min.js",
+  "sideeffects": false,
+  "description": "## Project setup ``` yarn install ```",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhagqn/dalitek-i18n-lite.git"
+  },
+  "keywords": [
+    "i18n"
+  ],
+  "author": "zhagqn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhagqn/dalitek-i18n-lite/issues"
+  },
+  "homepage": "https://github.com/zhagqn/dalitek-i18n-lite#readme"
 }
