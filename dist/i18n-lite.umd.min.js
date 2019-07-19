@@ -1,5 +1,5 @@
 /*!
- * i18n-lite v0.2.0 
+ * i18n-lite v0.2.1 
  * (c) 2019 zhagqn
  * Released under the MIT License.
  */
